@@ -1,0 +1,8 @@
+<launch>
+  <param name="use_sim_time" value="true"/>
+  <node pkg="rslidar_sdk" name="tf_broadcaster" type="tf_broadcaster" output="screen">
+  </node>
+  <!-- rviz -->
+  <node pkg="rviz" name="rviz" type="rviz" args="-d $(find rslidar_sdk)/rviz/rviz.rviz" />
+  <node pkg="rosbag" type="play" name="rosbag" args="--clock /home/han/实验/0425出差前采集实验/20230425165207_02.bag /home/han/实验/0425出差前采集实验/20230425165207_03.bag"/>
+</launch>

@@ -1,0 +1,12 @@
+<launch>
+    <node pkg="rslidar_sdk" name="rslidar_sdk_node_m1_207" type="rslidar_sdk_node_m1_207" output="screen">
+  </node>
+  <node pkg="rslidar_sdk" name="rslidar_sdk_node_m1" type="rslidar_sdk_node_m1" output="screen">
+  </node>
+  <node pkg="rslidar_sdk" name="tf_broadcaster" type="tf_broadcaster" output="screen">
+  </node>
+   <node pkg="rslidar_sdk" name="rslidar_sdk_node_80" type="rslidar_sdk_node_80" output="screen">
+  </node>
+  <!-- rviz -->
+  <node pkg="rviz" name="rviz" type="rviz" args="-d $(find rslidar_sdk)/rviz/rviz.rviz" />
+</launch>
