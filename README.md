@@ -5,4 +5,5 @@ docker pull crpi-6bf8f4ebks7rgb7z.cn-beijing.personal.cr.aliyuncs.com/jerichoji/
 # run
 cd LIVO_SLAM
 bash docker.sh
+cd /catkin_ws/ && catkin_make
 ```
