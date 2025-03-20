@@ -1,6 +1,7 @@
 docker run -it \
   --rm \
   --gpus all \
+  --volume/tmp/.X11-unix:/tmp/.X11-unix \
   --network=host \
   --shm-size=32g \
   -v /home/a/LIVO_SLAM/src/:/catkin_ws/src/ \
