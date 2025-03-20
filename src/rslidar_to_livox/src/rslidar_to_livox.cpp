@@ -43,6 +43,7 @@ public:
         livox_msg.point_num = livox_msg.points.size();
 
         // 发布转换后的 Livox 点云数据
+        std::cout<< "publishing pointcloud" << std::endl;
         pub_.publish(livox_msg);
     }
 
