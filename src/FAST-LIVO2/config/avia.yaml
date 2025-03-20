@@ -1,7 +1,7 @@
 common:
   img_topic: "/camera/color/image_raw"
   lid_topic: "/livox/lidar"
-  imu_topic: "/imu/data"
+  imu_topic: "/imu"
   img_en: 1
   lidar_en: 1
   ros_driver_bug_fix: false
